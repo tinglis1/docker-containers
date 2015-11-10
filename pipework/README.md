@@ -24,6 +24,9 @@ To use pipework to set a  static ip:
 In this example the ethernet port used is 'br0', the ip is static at 192.168.2.100 with a /24 network and a gateway of 192.168.1.1.
 
 #### Dynamic IP
+
+**I have had some issues with testing the dynamic ip. Usually the docker will work the first time but will not release the ip or close the connection when the docker stops or restarts. After that I have had issues geeting the docker to connect again. Not sure why or what causes this yet.**
+
 To use pipework to set a  dynamic ip:
 
 	-e 'pipework_cmd=br0 @CONTAINER_NAME@ dhcpcd'

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>pipework</Name>
-  <Description> dreamcat4 pipework implementation&#13;
+  <Description> Pipework allows you to have a dedicated ip for a docker container. This is the unraid implementation of the dreamcat4 pipework docker container&#13;
 </Description>
   <Registry>https://hub.docker.com/r/dreamcat4/pipework/</Registry>
   <Repository>dreamcat4/pipework</Repository>

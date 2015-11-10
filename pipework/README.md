@@ -13,7 +13,8 @@ Install and run the pipework docker container. No configuration is required for 
 
 ### Setting a ip for a docker container
 
-Pipework is controlled by adding to the additional parameters input in the container advanced configuration.
+Set the container network mode to 'none' and then add the additional parameters input in the container advanced configuration.
+
 
 #### Static IP
 To use pipework to set a  static ip:

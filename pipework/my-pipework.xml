@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>pipework</Name>
+  <Description> dreamcat4 pipework implementation&#13;
+</Description>
+  <Registry>https://hub.docker.com/r/dreamcat4/pipework/</Registry>
+  <Repository>dreamcat4/pipework</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI></WebUI>
+  <Banner>https://dl.dropboxusercontent.com/u/20957508/shared/Pipework-icon-300x300.png</Banner>
+  <Icon>https://dl.dropboxusercontent.com/u/20957508/shared/Pipework-icon-300x300.png</Icon>
+  <ExtraParams>--pid=host -e run_mode=batch,daemon -e host_routes=true</ExtraParams>
+  <Beta>True</Beta>
+  <Category>Network:Other</Category>
+  <Date>2015-11-10</Date> 
+</Container>

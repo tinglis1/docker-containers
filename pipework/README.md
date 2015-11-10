@@ -29,3 +29,5 @@ To use pipework to set a  dynamic ip:
 	
 In this example the ethernet port used is 'br0', the ip is dynamic using dhcpcd which is installed in unraid.
 
+
+*Pipework didnt appear to have a logo so I have used the 'd' from docker and turned it upside down. If someone has a proper logo for pipework let me know.*

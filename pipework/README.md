@@ -6,7 +6,7 @@ For more infomation on how to use pipework go to [jpetazzo/pipework](https://git
 
 Add the template repository to unraid Docker Template Repositories:
 
-	https://github.com/tinglis1/docker-containers/tree/master/templates
+	https://github.com/tinglis1/docker-containers/tree/master/tinglis1-templates
 
 Install and run the pipework docker container. No configuration is required for the pipework container.
 

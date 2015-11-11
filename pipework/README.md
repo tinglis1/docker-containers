@@ -6,7 +6,7 @@ For more infomation on how to use pipework go to [jpetazzo/pipework](https://git
 
 Add the template repository to unraid Docker Template Repositories:
 
-	https://github.com/tinglis1/docker-containers/tree/master/tinglis1-templates
+	https://github.com/tinglis1/docker-containers/tree/master/
 
 Install and run the pipework docker container. No configuration is required for the pipework container.
 
@@ -25,7 +25,7 @@ In this example the ethernet port used is 'br0', the ip is static at 192.168.2.1
 
 #### Dynamic IP
 
-**I have had some issues with testing the dynamic ip. Usually the docker will work the first time but will not release the ip or close the connection when the docker stops or restarts. After that I have had issues geeting the docker to connect again. Not sure why or what causes this yet.**
+**I have had some issues with testing the dynamic ip. Usually the docker will work the first time but will not release the ip or close the connection when the docker stops or restarts. After that I have had issues getting the docker to connect again. Not sure why or what causes this, I do not use dynamic addresses for my dockers, so feel free to help on this one.**
 
 To use pipework to set a  dynamic ip:
 

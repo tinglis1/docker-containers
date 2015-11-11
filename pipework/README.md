@@ -33,11 +33,11 @@ To use pipework to set a  dynamic ip:
 	
 In this example the ethernet port used is 'br0', the ip is dynamic using udhcpc which is installed in the container.
 I would recommend setting the mac address when using dynamic addresses otherwise everytime the container is restarted it will obtain a differnt ip.
-A simple way to solve the mac address changing is to use the 'U:' function of pipework to generate a mac address based on a string.
+There is more info on setting a mac address in the pipework documentation.
 
-	-e 'pipework_cmd=br0 @CONTAINER_NAME@ udhcpc U:"myhost.foo.com"'
+	-e 'pipework_cmd=br0 @CONTAINER_NAME@ udhcpc F2:F4:2E:A4:BD:57'
 	
-I have done limited testing on this as I tend to use static addresses for my dockers.
+*I have done limited testing on this as I tend to use static addresses for my dockers.*
 
 
 #### Notes

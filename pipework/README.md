@@ -14,6 +14,7 @@ Install and run the pipework docker container. No configuration is required for 
 ### Setting a ip for a docker container
 
 Set the container network mode to 'none' and then add the additional parameters input in the container advanced configuration.
+I have found it best to stop and start a contrainer rather than restart the conainer when making changes to the pipework_cmd.
 
 
 #### Static IP
@@ -25,13 +26,18 @@ In this example the ethernet port used is 'br0', the ip is static at 192.168.2.1
 
 #### Dynamic IP
 
-**I have had some issues with testing the dynamic ip. Usually the docker will work the first time but will not release the ip or close the connection when the docker stops or restarts. After that I have had issues getting the docker to connect again. Not sure why or what causes this, I do not use dynamic addresses for my dockers, so feel free to help on this one.**
 
 To use pipework to set a  dynamic ip:
 
-	-e 'pipework_cmd=br0 @CONTAINER_NAME@ dhcpcd'
+	-e 'pipework_cmd=br0 @CONTAINER_NAME@ udhcpc'
 	
-In this example the ethernet port used is 'br0', the ip is dynamic using dhcpcd which is installed in unraid.
+In this example the ethernet port used is 'br0', the ip is dynamic using udhcpc which is installed in the container.
+I would recommend setting the mac address when using dynamic addresses otherwise everytime the container is restarted it will obtain a differnt ip.
+A simple way to solve the mac address changing is to use the 'U:' function of pipework to generate a mac address based on a string.
+
+	-e 'pipework_cmd=br0 @CONTAINER_NAME@ udhcpc U:"myhost.foo.com"'
+	
+I have done limited testing on this as I tend to use static addresses for my dockers.
 
 
 #### Notes

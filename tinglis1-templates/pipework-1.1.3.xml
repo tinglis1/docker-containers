@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>pipework</Name>
-  <Description> Pipework allows you to have a static or dynamic ip for a docker container. This is the unraid implementation of the dreamcat4 pipework docker container&#13;
+  <Description> This is the version 1.1.3 of the pipework docker container, the latest container maybe broken so this might work better. Pipework allows you to have a static or dynamic ip for a docker container. This is the unraid implementation of the dreamcat4 pipework docker container&#13;
 </Description>
   <Registry>https://hub.docker.com/r/dreamcat4/pipework/</Registry>
-  <Repository>dreamcat4/pipework</Repository>
+  <Repository>dreamcat4/pipework:1.1.3</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Environment/>
@@ -24,7 +24,7 @@
   <Banner>https://raw.githubusercontent.com/tinglis1/docker-containers/master/pipework/pipework-icon.png</Banner>
   <Icon>https://raw.githubusercontent.com/tinglis1/docker-containers/master/pipework/pipework-icon.png</Icon>
   <ExtraParams>--pid=host -e run_mode=batch,daemon -e host_routes=true</ExtraParams>
-  <Beta>False</Beta>
+  <Beta>True</Beta>
   <Category>Network:Other</Category>
   <Date>2015-11-10</Date> 
   <Support>http://lime-technology.com/forum/index.php?topic=43970.0</Support>

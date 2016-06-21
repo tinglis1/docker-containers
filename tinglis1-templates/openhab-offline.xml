@@ -26,11 +26,6 @@
       <ContainerDir>/openhab/userdata</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/etc/timezone</HostDir>
-      <ContainerDir>/etc/timezone</ContainerDir>
-      <Mode>ro</Mode>
-    </Volume>
   </Data>
   <Version></Version>
   <WebUI>http://[IP]:8080/</WebUI>

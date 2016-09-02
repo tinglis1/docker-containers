@@ -4,7 +4,7 @@
   <Description> Pipework allows you to have a static or dynamic ip for a docker container. This is the unraid implementation of the dreamcat4 pipework docker container&#13;
 </Description>
   <Registry>https://hub.docker.com/r/dreamcat4/pipework/</Registry>
-  <Repository>dreamcat4/pipework</Repository>
+  <Repository>dreamcat4/pipework:1.1.5</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Environment/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>pipework</Name>
-  <Description> Pipework allows you to have a static or dynamic ip for a docker container. This is the unraid implementation of the dreamcat4 pipework docker container&#13;
+  <Name>pipework-1.1.5</Name>
+  <Description> This is for unRAID 6.0 and 6.1. Pipework allows you to have a static or dynamic ip for a docker container. This is the unraid implementation of the dreamcat4 pipework docker container&#13;
 </Description>
   <Registry>https://hub.docker.com/r/dreamcat4/pipework/</Registry>
   <Repository>dreamcat4/pipework:1.1.5</Repository>
